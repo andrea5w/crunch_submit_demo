@@ -1,0 +1,11 @@
+option solver gurobi;
+option gurobi_options 'outlev=1 threads=8';
+
+model mpsi.mod
+
+#data pp08a.dat;
+data swath.dat;
+
+solve;
+
+display x;
